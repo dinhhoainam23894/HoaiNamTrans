@@ -151,7 +151,7 @@ html {
 
 #### Giải thích
 
-1. `box-sizing: border-box` làm cho việc bổ sung `padding` hoặc `border`s không bị ảnh hưởng bởi `chiều cao` hay `độ rộng` phần tử.
+1. `box-sizing: border-box` làm cho việc thêm `padding` hoặc `border`s không bị ảnh hưởng bởi `hight` hay `width` phần tử.
 2. `box-sizing: inherit` làm cho một phần tử tuân theo quy tắc `box-sizing` của phần tử cha.
 
 #### Hỗ trợ trình duyệt
@@ -283,7 +283,7 @@ Thay đổi kích thước cửa sổ trình duyệt của bạn để xem tỷ 
 
 #### Giải thích
 
-`padding-top` trên phần tử giả lập `::before` gây ra chiều cao của phần tử bằng một phần trăm chiều rộng của nó. `100%` do đó chiều cao của phần tử sẽ luôn luôn là `100%`,tạo ra một hình vuông đáp ứng.
+`padding-top` trên phần tử giả lập `::before` gây ra chiều cao của phần tử bằng một tỷ lệ phần trăm chiều rộng của nó. `100%` do đó chiều cao của phần tử sẽ luôn luôn là `100%`,tạo ra một hình vuông đáp ứng.
 
 Phương pháp này cũng cho phép nội dung được đặt bên trong phần tử bình thường.
 
@@ -561,7 +561,7 @@ Giao diện website cơ bản sử dụng `grid`.
 <!-- tags: layout -->
 ### Lược bỏ text
 
-Nếu đoạn text dài hơn 1 dòng nó sẽ được lược bỏ bằng dấu 3 chấm `…`.
+Nếu đoạn text dài hơn 1 dòng, nó sẽ được lược bỏ bằng dấu 3 chấm `…`.
 
 #### HTML
 
@@ -604,7 +604,7 @@ Nếu đoạn text dài hơn 1 dòng nó sẽ được lược bỏ bằng dấu
    (đối với 1 khối, 100% chiều rông và chiều cao tự động).
 2. `white-space: nowrap` ngăn cho text vượt quá 1 hàng trong chiều cao.
 3. `text-overflow: ellipsis` thay bằng dấu chấm lửng nếu đoạn text tràn ra ngoài kích cỡ.
-4. `width: 200px;` đảm bảo rằng phần tử có một chiều, để biết khi nào có dấu chấm lửng
+4. `width: 200px;` đảm bảo rằng phần tử có một chiều rộng, để biết khi nào có dấu chấm lửng
 
 #### Hỗ trợ trình duyệt
 
@@ -746,9 +746,9 @@ Có rất nhiều yếu tố giả khác mà bạn có thể sử dụng để t
 * https://caniuse.com/#feat=css-scrollbar
 
 <!-- tags: visual -->
-### Lựa chọn văn bản tùy chọn
+### Tuỳ chỉnh văn bản được chọn
 
-Thay đổi phong cách của văn bản tùy chọn
+Thay đổi phong cách của văn bản được chọn
 
 #### HTML
 
@@ -869,12 +869,12 @@ Tạo một cái bóng giống như `box-shadow` nhưng dựa trên màu sắc t
 
 #### Explanation
 
-The snippet requires a somewhat complex case of stacking contexts to get right, such that the pseudo-element
-will be positioned underneath the element itself while still being visible.
+~~The snippet requires a somewhat complex case of stacking contexts to get right, such that the pseudo-element
+will be positioned underneath the element itself while still being visible.~~
 
 1. `position: relative` về cha mẹ thiết lập một ngữ cảnh định vị Cartesian cho các phần tử con.
 2. `z-index: 1` Thiết lập một ngữ cảnh xếp chồng khác.
-3. `position: relative` Trên phần tử con thiết lập một ngữ cảnh cho các phần tử giả lập.
+3. `position: relative` Trên phần tử con thiết lập một vị trí theo ngữ cảnh cho các phần tử giả lập.
 4. `::after` định nghĩa 1 phần tử gỉa lập.
 5. `position: absolute` lấy phần tử giả ra khỏi dòng chảy của tài liệu và định vị nó trong quan hệ với cha mẹ.
 6. `width: 100%` và `height: 100%` kích cỡ các yếu tố giả để điền vào kích thước của cha mẹ, làm cho nó có kích thước bằng nhau.
@@ -945,7 +945,7 @@ Màu văn bản nên hơi nhạt dần để làm cho nó trông giống như n�
 <!-- tags: visual -->
 ### Văn bản Gradient
 
-cho văn bản một màu gradient
+Tạo văn bản một màu gradient
 
 #### HTML
 
@@ -1374,7 +1374,7 @@ Sử dụng một hình dạng SVG để tách hai khối khác nhau để tạo
 <!-- tags: visual -->
 ### Ngăn xếp phông chữ hệ thống
 
-Sử dụng phông chữ bản địa của hệ điều hành để có được cảm nhận gần giống với ứng dụng gốc.
+Sử dụng phông chữ tự nhiên của hệ điều hành để có được cảm nhận gần giống với ứng dụng gốc.
 
 #### HTML
 
@@ -1405,8 +1405,8 @@ Sử dụng phông chữ bản địa của hệ điều hành để có đượ
 
 #### Explanation
 
-The browser looks for each successive font, preferring the first one if possible, and
-falls back to the next if it cannot find the font (on the system or defined in CSS).
+~~The browser looks for each successive font, preferring the first one if possible, and
+falls back to the next if it cannot find the font (on the system or defined in CSS).~~
 
 1. `-apple-system` ở San Francisco, được sử dụng trên iOS và macOS (tuy nhiên không có Chrome)
 2. `BlinkMacSystemFont` ở San Francisco sử dụng trên macOS Chrome
@@ -1570,7 +1570,7 @@ Tạo một donut spinner có thể sử dụng để  biểu thị việc tải
 
 #### Explanation
 
-Sử dụng đường viền bán minh bạch cho toàn bộ phần tử, ngoại trừ một bên sẽ đóng vai trò là chỉ số tải cho bánh rán. Sử dụng hình ảnh động để xoay phần tử.
+Sử dụng đường viền nửa dạng trong suôt cho toàn bộ phần tử, ngoại trừ một bên sẽ đóng vai trò là chỉ số tải cho bánh rán. Sử dụng hình ảnh động để xoay phần tử.
 
 #### Browser support
 
@@ -1678,7 +1678,7 @@ Các biến có thể được sử dụng lại cho các thuộc tính chức n
 
 #### Explanation
 
-Các biến được định nghĩa trên toàn cầu trong`: root` CSS pseudo-class khớp với phần tử gốc của cây đại diện cho tài liệu. Trong HTML,`: root` đại diện cho phần tử <html> và giống với html của bộ chọn, ngoại trừ độ đặc hiệu của nó cao hơn.
+Các biến được định nghĩa trên toàn cục trong`: root` CSS pseudo-class khớp với phần tử gốc của cây đại diện cho tài liệu. Trong HTML,`: root` đại diện cho phần tử <html> và giống với html của bộ chọn, ngoại trừ độ đặc hiệu của nó cao hơn.
 #### Browser support
 
 <span class="snippet__support-note">✅ No caveats.</span>
@@ -1756,10 +1756,10 @@ Tạo hiệu ứng gạch chân khi text được hover vào.
 
 #### Explanation
 
-1. `display: inline-block` makes the block `p` an `inline-block` to prevent the underline from
-   spanning the entire parent width rather than just the content (text).
+~~1. `display: inline-block` makes the block `p` an `inline-block` to prevent the underline from
+   spanning the entire parent width rather than just the content (text).~~
 2. `position: relative` trên phần tử cha tham khảo thiết lập một bối cảnh định vị Cartesian cho con của nó
-4. `position: absolute` takes the pseudo element out of the flow of the document and positions it in relation to the parent.
+~~4. `position: absolute` takes the pseudo element out of the flow of the document and positions it in relation to the parent.~~
 5. `width: 100%` đảm bảo phần tử trải dài toàn bộ chiều rộng của cha mẹ.
 6. `transform: scaleX(0)` ban đầu vảy phần tử giả thành 0 vì vậy nó không có chiều rộng và không nhìn thấy được.
 7. `bottom: 0` và `left: 0` vị trí của nó ở dưới và bên trái phần tử cha.
@@ -2023,7 +2023,7 @@ Tiết lộ trình đơn bật lên tương tác trên di chuột.
 
 #### Explanation
 
-1. `position: relative` trên phụ huynh tham khảo thiết lập một bối cảnh định vị Cartesian cho con của nó 
+1. `position: relative` phần tử cha khởi tạo một vị trí Cartesian cho con của nó 
 2. `position: absolute` đưa trình đơn bật lên ra khỏi dòng chảy của tài liệu và định vị nó trong quan hệ với cha mẹ.
 3. `left: 100%` di chuyển menu popout 100% chiều ngang của cha mẹ từ bên trái.
 4. `visibility: hidden` ẩn menu popout ban đầu và cho phép chuyển tiếp (unlike `display: none`).
@@ -2036,7 +2036,7 @@ Tiết lộ trình đơn bật lên tương tác trên di chuột.
 <!-- tags: interactivity -->
 ### Sibling fade
 
-Fades ra các anh chị em của một item hovered.
+Làm mờ ra các phần tử anh chị em của một phần tử được hover.
 
 #### HTML
 
