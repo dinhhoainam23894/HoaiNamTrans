@@ -104,7 +104,7 @@ Ghi chú: `1rem` tương đương `16px`.
 
 6. `nth-child(n)` nhắm mục tiêu các phần tử đó là con thứ n của phần tử cha mẹ nó.
 
-7. `animation-delay` được sử dụng trên `div` thứ 2 và 3 tương ứng, để các phần tử không kích hoạt các hiệu ứng cùng một lúc.
+7. `animation-delay` được sử dụng trên `div` thứ 2 và 3 ~~tương ứng~~(respectively)*lần lượt*, để các phần tử không kích hoạt các hiệu ứng cùng một lúc.
 
 #### Hỗ trợ trình duyệt
 
@@ -226,7 +226,7 @@ html {
 <!-- tags: layout -->
 ### Tỉ lệ giữa chiều rộng và cao không thay đổi
 
-Với một phần tử có chiều rộng biến đổi, nó sẽ đảm bảo chiều cao của nó vẫn tương xứng theo kiểu đáp ứng
+Với một phần tử có chiều rộng biến đổi, nó sẽ đảm bảo chiều cao của nó vẫn tương xứng theo kiểu đáp ứng(để nguyên responsive)
 (i.e., chiều rộng đến chiều cao của nó không thay đổi).
 
 #### HTML
@@ -283,7 +283,7 @@ Thay đổi kích thước cửa sổ trình duyệt của bạn để xem tỷ 
 
 #### Giải thích
 
-`padding-top` trên phần tử giả lập `::before` gây ra chiều cao của phần tử bằng một phần trăm chiều rộng của nó. `100%` do đó chiều cao của phần tử sẽ luôn luôn là `100%`,tạo ra một hình vuông đáp ứng.
+`padding-top` trên phần tử giả lập `::before` gây ra chiều cao của phần tử bằng một ~~phần trăm~~(percentage)*tỉ lệ với* chiều rộng của nó. `100%` do đó chiều cao của phần tử sẽ luôn luôn là `100%`,tạo ra một hình vuông đáp ứng.
 
 Phương pháp này cũng cho phép nội dung được đặt bên trong phần tử bình thường.
 
@@ -746,9 +746,9 @@ Có rất nhiều yếu tố giả khác mà bạn có thể sử dụng để t
 * https://caniuse.com/#feat=css-scrollbar
 
 <!-- tags: visual -->
-### Lựa chọn văn bản tùy chọn
+### Lựa chọn văn bản ~~tùy chọn~~(selection)*được chọn*
 
-Thay đổi phong cách của văn bản tùy chọn
+Thay đổi phong cách của văn bản ~~tùy chọn~~(selection)*được chọn*
 
 #### HTML
 
@@ -997,7 +997,7 @@ cho văn bản một màu gradient
 <!-- tags: visual -->
 ### đường viền hairline
 
-Cung cấp cho một phần tử một đường viền bằng 1 pixel của thiết bị gốc có chiều rộng, có thể trông rất sắc nét và sắc nét.
+Cung cấp cho một phần tử một đường viền bằng 1 pixel của thiết bị gốc có chiều rộng, có thể trông rất ~~sắc nét~~(sharp)*rõ ràng* và sắc nét.
 
 #### HTML
 
@@ -1505,7 +1505,7 @@ Tạo hình tam giác với css thuần.
 [View this link for a detailed explanation.](https://stackoverflow.com/q/7073484)
 
 Màu của đường viền là màu của tam giác. Phía đỉnh điểm tam giác tương ứng với điểm đối diện thuộc tính `border-*`. Ví dụ 1 màu ở trên `border-top`
-mcó nghĩa là một mũi tên đi xuống.
+có nghĩa là ~~một mũi tên đi xuống~~(the arrow points downward)*đỉnh nhọn phía dưới*.
 
 sử dụng giá trị `px` để thay đổi tỷ lệ tam giác
 
