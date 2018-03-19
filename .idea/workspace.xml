@@ -2,7 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0809a52b-4d05-4f8d-a6d2-4b5643d6662a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RFU design patterns - vi.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/30-seconds-of-css.iml" afterPath="$PROJECT_DIR$/.idea/30-seconds-of-css.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/bouncing-loader.md" afterPath="$PROJECT_DIR$/snippets/bouncing-loader.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/box-sizing-reset.md" afterPath="$PROJECT_DIR$/snippets/box-sizing-reset.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/circle.md" afterPath="$PROJECT_DIR$/snippets/circle.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/clearfix.md" afterPath="$PROJECT_DIR$/snippets/clearfix.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/constant-width-to-height-ratio.md" afterPath="$PROJECT_DIR$/snippets/constant-width-to-height-ratio.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/custom-scrollbar.md" afterPath="$PROJECT_DIR$/snippets/custom-scrollbar.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/custom-text-selection.md" afterPath="$PROJECT_DIR$/snippets/custom-text-selection.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/custom-variables.md" afterPath="$PROJECT_DIR$/snippets/custom-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/disable-selection.md" afterPath="$PROJECT_DIR$/snippets/disable-selection.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/donut-spinner.md" afterPath="$PROJECT_DIR$/snippets/donut-spinner.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/dynamic-shadow.md" afterPath="$PROJECT_DIR$/snippets/dynamic-shadow.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/easing-variables.md" afterPath="$PROJECT_DIR$/snippets/easing-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/etched-text.md" afterPath="$PROJECT_DIR$/snippets/etched-text.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/evenly-distributed-children.md" afterPath="$PROJECT_DIR$/snippets/evenly-distributed-children.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/flexbox-centering.md" afterPath="$PROJECT_DIR$/snippets/flexbox-centering.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/gradient-text.md" afterPath="$PROJECT_DIR$/snippets/gradient-text.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/grid-centering.md" afterPath="$PROJECT_DIR$/snippets/grid-centering.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/grid-layout.md" afterPath="$PROJECT_DIR$/snippets/grid-layout.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/hairline-border.md" afterPath="$PROJECT_DIR$/snippets/hairline-border.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/hover-underline-animation.md" afterPath="$PROJECT_DIR$/snippets/hover-underline-animation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/mouse-cursor-gradient-tracking.md" afterPath="$PROJECT_DIR$/snippets/mouse-cursor-gradient-tracking.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/overflow-scroll-gradient.md" afterPath="$PROJECT_DIR$/snippets/overflow-scroll-gradient.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/popout-menu.md" afterPath="$PROJECT_DIR$/snippets/popout-menu.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/pretty-text-underline.md" afterPath="$PROJECT_DIR$/snippets/pretty-text-underline.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/reset-all-styles.md" afterPath="$PROJECT_DIR$/snippets/reset-all-styles.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/shape-separator.md" afterPath="$PROJECT_DIR$/snippets/shape-separator.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/sibling-fade.md" afterPath="$PROJECT_DIR$/snippets/sibling-fade.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/system-font-stack.md" afterPath="$PROJECT_DIR$/snippets/system-font-stack.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/triangle.md" afterPath="$PROJECT_DIR$/snippets/triangle.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets/truncate-text.md" afterPath="$PROJECT_DIR$/snippets/truncate-text.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/bouncing-loader.md" afterPath="$PROJECT_DIR$/snippets_vi/bouncing-loader.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/box-sizing-reset.md" afterPath="$PROJECT_DIR$/snippets_vi/box-sizing-reset.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/circle.md" afterPath="$PROJECT_DIR$/snippets_vi/circle.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/clearfix.md" afterPath="$PROJECT_DIR$/snippets_vi/clearfix.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/constant-width-to-height-ratio.md" afterPath="$PROJECT_DIR$/snippets_vi/constant-width-to-height-ratio.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/custom-scrollbar.md" afterPath="$PROJECT_DIR$/snippets_vi/custom-scrollbar.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/custom-text-selection.md" afterPath="$PROJECT_DIR$/snippets_vi/custom-text-selection.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/custom-variables.md" afterPath="$PROJECT_DIR$/snippets_vi/custom-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/disable-selection.md" afterPath="$PROJECT_DIR$/snippets_vi/disable-selection.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/donut-spinner.md" afterPath="$PROJECT_DIR$/snippets_vi/donut-spinner.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/dynamic-shadow.md" afterPath="$PROJECT_DIR$/snippets_vi/dynamic-shadow.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/easing-variables.md" afterPath="$PROJECT_DIR$/snippets_vi/easing-variables.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/etched-text.md" afterPath="$PROJECT_DIR$/snippets_vi/etched-text.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/evenly-distributed-children.md" afterPath="$PROJECT_DIR$/snippets_vi/evenly-distributed-children.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/flexbox-centering.md" afterPath="$PROJECT_DIR$/snippets_vi/flexbox-centering.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/gradient-text.md" afterPath="$PROJECT_DIR$/snippets_vi/gradient-text.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/grid-centering.md" afterPath="$PROJECT_DIR$/snippets_vi/grid-centering.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/grid-layout.md" afterPath="$PROJECT_DIR$/snippets_vi/grid-layout.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/hairline-border.md" afterPath="$PROJECT_DIR$/snippets_vi/hairline-border.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/hover-underline-animation.md" afterPath="$PROJECT_DIR$/snippets_vi/hover-underline-animation.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/mouse-cursor-gradient-tracking.md" afterPath="$PROJECT_DIR$/snippets_vi/mouse-cursor-gradient-tracking.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/overflow-scroll-gradient.md" afterPath="$PROJECT_DIR$/snippets_vi/overflow-scroll-gradient.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/popout-menu.md" afterPath="$PROJECT_DIR$/snippets_vi/popout-menu.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/pretty-text-underline.md" afterPath="$PROJECT_DIR$/snippets_vi/pretty-text-underline.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/reset-all-styles.md" afterPath="$PROJECT_DIR$/snippets_vi/reset-all-styles.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/shape-separator.md" afterPath="$PROJECT_DIR$/snippets_vi/shape-separator.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/sibling-fade.md" afterPath="$PROJECT_DIR$/snippets_vi/sibling-fade.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/system-font-stack.md" afterPath="$PROJECT_DIR$/snippets_vi/system-font-stack.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/triangle.md" afterPath="$PROJECT_DIR$/snippets_vi/triangle.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/snippets_vi/truncate-text.md" afterPath="$PROJECT_DIR$/snippets_vi/truncate-text.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/summary_vi.md" afterPath="$PROJECT_DIR$/summary_vi.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,11 +80,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="summary_vi.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="summary_vi.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/summary_vi.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="423">
+              <first_editor relative-caret-position="350">
                 <caret line="2167" column="91" lean-forward="false" selection-start-line="2167" selection-start-column="91" selection-end-line="2167" selection-end-column="91" />
                 <folding>
                   <marker date="1520884093000" expanded="true" signature="140:189" ph="..." />
@@ -122,12 +188,25 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RFU design patterns - vi.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RFU design patterns - vi.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="401">
+                <caret line="74" column="145" lean-forward="false" selection-start-line="74" selection-start-column="145" selection-end-line="74" selection-end-column="145" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="circle.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snippets/circle.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="618">
-                <caret line="50" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <first_editor relative-caret-position="750">
+                <caret line="50" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
                 <folding>
                   <marker date="1520773917000" expanded="true" signature="127:203" ph="{...}" />
                 </folding>
@@ -193,6 +272,7 @@
         <option value="$PROJECT_DIR$/snippets_tmp/sibling-fade.md" />
         <option value="$PROJECT_DIR$/snippets_tmp/custom-variables.md" />
         <option value="$PROJECT_DIR$/summary_vi.md" />
+        <option value="$PROJECT_DIR$/RFU design patterns - vi.md" />
       </list>
     </option>
   </component>
@@ -206,7 +286,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="height" value="817" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -226,19 +306,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="30-seconds-of-css" type="b2602c69:ProjectViewProjectNode" />
               <item name="30-seconds-of-css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="30-seconds-of-css" type="b2602c69:ProjectViewProjectNode" />
-              <item name="30-seconds-of-css" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="snippets" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -295,25 +370,33 @@
       <updated>1520521709745</updated>
       <workItem from="1520521711079" duration="3601000" />
       <workItem from="1520557463537" duration="1301000" />
-      <workItem from="1520774436068" duration="8464000" />
+      <workItem from="1520774436068" duration="10941000" />
+      <workItem from="1521492765979" duration="77000" />
     </task>
+    <task id="LOCAL-00001" summary="done">
+      <created>1520884116926</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1520884116926</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13366000" />
+    <option name="totallyTimeSpent" value="15920000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1440" height="815" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19313304" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19599427" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34138486" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32850242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3263889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -332,11 +415,149 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/summary_vi.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1520884093000" expanded="true" signature="140:189" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="240:365" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="249:300" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="306:363" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="383:430" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="454:610" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="647:675" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="712:740" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="3070:3099" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="3124:3150" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="4109:4227" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="4268:4319" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="4330:4348" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="5743:5780" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="5821:5893" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="5933:5984" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="7070:7122" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="7175:7229" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="8213:8265" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="8308:8378" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="9170:9222" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="9262:9332" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="10078:10308" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="10174:10266" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="10345:10551" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="10571:10611" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="10621:10646" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="10656:10681" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="10690:10714" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="10723:10747" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="12520:12609" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="13619:13695" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="14486:14716" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="14785:14802" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="14830:14904" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="14932:15006" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="15065:15068" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="16858:16903" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="16938:16981" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="17984:18028" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="18075:18114" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="18131:18245" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="18269:18433" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="20534:20625" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="21474:21600" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="22629:22657" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="22690:22747" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="22711:22745" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="22780:22844" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="22801:22842" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="22877:22935" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="22898:22933" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="24328:24422" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="24379:24415" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="24472:24497" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="24531:24764" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="24801:24941" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="27158:27501" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="27541:27609" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="27644:27712" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="29712:29959" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="30001:30020" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="30993:31054" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="31079:31484" ph="{...}" />
+              <marker date="1520884093000" expanded="false" signature="31120:31414" ph="data:image/svg+xml" />
+              <marker date="1520884093000" expanded="true" signature="33210:33367" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="34672:34810" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="36805:36892" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="36812:36846" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="36854:36890" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="36900:37097" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="38241:39268" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="39288:39392" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="39418:39449" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="41633:41701" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="41736:41957" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="41998:42058" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="44223:44247" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="45127:45161" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="45217:45398" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="45437:45462" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="45504:45793" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="45841:45861" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="45988:46142" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="48072:48132" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="48100:48125" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="48167:48192" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="48206:48267" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="48300:48326" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="49814:49953" ph="..." />
+              <marker date="1520884093000" expanded="true" signature="49982:50032" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="50071:50090" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="51300:51465" ph="{...}" />
+              <marker date="1520884093000" expanded="true" signature="51485:51624" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/circle.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="750">
+            <caret line="50" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <folding>
+              <marker date="1520773917000" expanded="true" signature="127:203" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snippets/clearfix.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding>
+              <marker date="1520773917000" expanded="true" signature="262:380" ph="..." />
+              <marker date="1520773917000" expanded="true" signature="421:472" ph="{...}" />
+              <marker date="1520773917000" expanded="true" signature="483:501" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/summary_vi.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -631,8 +852,8 @@
     <entry file="file://$PROJECT_DIR$/snippets/circle.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="618">
-            <caret line="50" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <first_editor relative-caret-position="750">
+            <caret line="50" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
             <folding>
               <marker date="1520773917000" expanded="true" signature="127:203" ph="{...}" />
             </folding>
@@ -644,7 +865,7 @@
     <entry file="file://$PROJECT_DIR$/summary_vi.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="423">
+          <first_editor relative-caret-position="350">
             <caret line="2167" column="91" lean-forward="false" selection-start-line="2167" selection-start-column="91" selection-end-line="2167" selection-end-column="91" />
             <folding>
               <marker date="1520884093000" expanded="true" signature="140:189" ph="..." />
@@ -742,6 +963,17 @@
               <marker date="1520884093000" expanded="true" signature="51300:51465" ph="{...}" />
               <marker date="1520884093000" expanded="true" signature="51485:51624" ph="{...}" />
             </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RFU design patterns - vi.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="401">
+            <caret line="74" column="145" lean-forward="false" selection-start-line="74" selection-start-column="145" selection-end-line="74" selection-end-column="145" />
+            <folding />
           </first_editor>
           <second_editor />
         </state>
