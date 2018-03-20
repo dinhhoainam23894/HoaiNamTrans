@@ -4,7 +4,7 @@
 
 ## Giới thiệu
 
-Tiếp theo bài viết trước có tựa đề là [Why design is Critical to Software Development][1], Tôi muốn tóm tắt lại về khía cạnh nâng cao hơn 1 chút gọi là `Design Patterns`.  Như bài báo trước của tôi, ý tưởng xuất hiện trong một cuộc thảo luận liên quan đến sự thành công của thiết kế phần mềm với một đồng nghiệp làm việc cùng. Nội dung chính của cuộc thảo luận là về những ý kiến cho rằng `Design Patterns` quá tốn thời gian để sử dụng trong lĩnh vực phát triển phần mềm. Mục đích của tôi ở đây để chứng mình rằng tại sao tôi tin điều đó là sai lầm.
+Tiếp theo bài viết trước có tựa đề là [Why design is Critical to Software Development][1], Tôi muốn ~~tóm tắt lại~~(tackle a slightly)* thảo luận 1 chút* về khía cạnh nâng cao hơn 1 chút gọi là `Design Patterns`.  Như bài báo trước của tôi, ý tưởng xuất hiện trong một cuộc thảo luận liên quan đến sự thành công của thiết kế phần mềm với một đồng nghiệp làm việc cùng. Nội dung chính của cuộc thảo luận là về những ý kiến cho rằng `Design Patterns` quá tốn thời gian để sử dụng trong lĩnh vực phát triển phần mềm. Mục đích của tôi ở đây để chứng mình rằng tại sao tôi tin điều đó là sai lầm.
 
 Tôi sẽ không đi sâu vào nguyên lý chi tiết hay thực hiện bất cứ `Design Patterns` cụ thể nào. Có rất nhiều nguồn tuyệt vời ở những nơi có ích hơn.
 
@@ -34,13 +34,13 @@ Vì `Design Patterns` các mẫu thiết kế được các nhà kiến ​​tr
 
 Để đưa ra sự giống nhau của `Design Pattern` trong lĩnh vực kỹ thuật dân dụng (Như tôi đã nêu ở bài [Why design is Critical to Software Development][1]) sẽ là một giải pháp để vượt sông. Đây là một vấn đề thường xuyên đối với các kỹ sư dân dụng, trong đó có một số giải pháp được ghi nhận và hiểu rõ. Các kỹ sư dân dụng có thể xây dựng một cây cầu hoặc một đường hầm.
 
-Tại sao một kỹ sư dân dụng cố gắng giải quyết vấn đề này từ đầu khi có những giải pháp thế giới thực có thể được đề cập đến? Có sự tương đồng gần gũi giữa kỹ sư xây dựng giải quyết vấn đề về sông và kỹ sư phần mềm giải quyết vấn đề phần mềm:
+Tại sao một kỹ sư dân dụng cố gắng giải quyết vấn đề này từ đầu khi có những giải pháp thế giới thực có thể được ~đề cập đến~(referred to)*xem xét*? Có sự tương đồng gần gũi giữa kỹ sư xây dựng giải quyết vấn đề về sông và kỹ sư phần mềm giải quyết vấn đề phần mềm:
 
 * Các giai pháp (cầu hoặc đường hầm) đều được làm rõ và ghi lại.
 * Các giai pháp (cầu hoặc đường hầm) giải quyết các vấn đề dân dụng đinh kỳ
 * Các giai pháp (cầu hoặc đường hầm) không phải là xác định hoặc quy định, nhưng là trừu tượng và có thể được điều chỉnh cho các vấn đề cụ thể để khởi công (cầu hoặc các vật liệu xây dựng đường hầm ví dụ có thể được lựa chọn cho sự liên kết của họ với các vấn đề cụ thể)
 
-Có Lập luận chống lại `Design Patterns` rằng chúng không thích hợp cho mục đích thương mại do quá trình thực hiện lâu dài của chúng không giữ được. `Design Patterns` tiết kiệm thời gian (khi được xem qua suốt thời gian sử dụng) bằng cách cho nhà phát triển lựa chọn các giải pháp đã được thử và thử nghiệm sẵn có mà họ có thể tùy chỉnh theo nhu cầu cụ thể của riêng họ.
+Có Lập luận chống lại `Design Patterns` rằng chúng không thích hợp cho mục đích thương mại do quá trình thực hiện lâu dài của chúng không ~~giữ được~~(hold up)*duy trì*. `Design Patterns` tiết kiệm thời gian (khi được xem qua suốt thời gian sử dụng) bằng cách cho nhà phát triển lựa chọn các giải pháp đã được thử và thử nghiệm sẵn có mà họ có thể tùy chỉnh theo nhu cầu cụ thể của riêng họ.
 
 Vấn đề duy nhất mà tôi gặp `Design Patterns` là khi giành thời gian để học về nó. Một số người trong số họ có thể khó hiểu và hiểu. Đây là một lời chỉ trích hợp lý, vì nó đòi hỏi một nhà phát triển có tay nghề cao hơn sử dụng chúng. Điều này sau đó có thể làm tăng chi phí dự án ban đầu. Tuy nhiên, khi xem xét trong suốt thời gian sử dụng một ứng dụng, tôi sẽ hoàn toàn mong đợi những chi phí phát triển ban đầu này sẽ được bù đắp lại do chi phí bảo trì thấp hơn do sự hiểu biết cao hơn và khả năng mở rộng dễ dàng hơn (làm cho ứng dụng dễ dàng mở rộng trong tương lai để đáp ứng những cơ hội đang nổi lên)..
 
@@ -55,7 +55,7 @@ Vấn đề duy nhất mà tôi gặp `Design Patterns` là khi giành thời gi
 * Chúng cung cấp cho nhà phát triển một loạt các giải pháp thử và thử nghiệm để làm việc với
 * Chúng là ngôn ngữ trung tính và do đó có thể được áp dụng cho bất kỳ ngôn ngữ nào hỗ trợ hướng đối tượng
 * Chúng hỗ trợ truyền thông bởi thực tế là họ có tài liệu tốt và có thể được nghiên cứu nếu đó không phải là trường hợp.
-* Chúng đã có một hồ sơ theo dõi đã được chứng minh vì chúng đã được sử dụng rộng rãi và do đó làm giảm nguy cơ kỹ thuật cho dự án
+* Chúng đã có một hồ sơ theo dõi đã được chứng minh ~~vì~~(as)*khi* chúng đã được sử dụng rộng rãi và do đó làm giảm nguy cơ kỹ thuật cho dự án
 * Chúng rất linh hoạt và có thể được sử dụng trong bất kỳ loại ứng dụng hoặc tên miền nào
 
 ## Kết luận
