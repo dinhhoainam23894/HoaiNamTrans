@@ -1,68 +1,66 @@
-## What are common database development mistakes made by application developers?
+## Những sai lầm về phát triển dữ liệu mà các nhà phát triển phần mềm thường mắc phải?
 
 _source https://stackoverflow.com/questions/621884/database-development-mistakes-made-by-application-developers_
 
-**1. Not using appropriate indices**
+**1. Không sử dụng các chỉ số thích hợp**
 
-This is a relatively easy one but still it happens all the time. Foreign keys should have indexes on them. If you're using a field in a 
+Đây là một điều tưởng chừng như đơn giản nhưng nó lại gặp phải mọi lúc. Khóa ngoại nên có chỉ số trên chúng.Nếu bạn đang sử dụng 1 trường trong mệnh đề 
 
-WHERE you should (probably) have an index on it. Such indexes should often cover multiple columns based on the queries you need to execute.
+WHERE bạn nên (có thể) có một chỉ số cho nó. các chỉ mục này thường dựa trên nhiều trường bạn cần để thực hiện truy vấn.
 
-**2. Not enforcing referential integrity**
+**2. Không thực thi toàn vẹn tham chiếu**
 
-Your database may vary here but if your database supports referential integrity--meaning that all foreign keys are guaranteed to point to an entity that exists--you should be using it.
+Cơ sở dữ liệu của bạn có thể thay đổi ngay ở đây nhưng nếu cơ sở dữ liệu của bạn hỗ trợ toàn vẹn tham chiếu--có nghĩa là tất cả khóa ngoại đều đảm bảo trỏ tới thực thể có tồn tại--bạn nên sử dụng nó.
 
-It's quite common to see this failure on MySQL databases. I don't believe MyISAM supports it. InnoDB does. You'll find people who are using MyISAM or those that are using InnoDB but aren't using it anyway.
+Nó là lỗi khá phổ biến ở cớ sở dữ liệu MySQL. Tôi không tin rằng MyISAM hỗ trợ nó. InnoDB thì có. Bạn sẽ tìm thấy những người sử dụng MyISAM hoặc đang sử dụng InnoDB nhưng sẽ không sử dụng nó (nó ở đây là toàn vẹn tham chiếu) theo bất cứ cách nào.
 
-More here:
+Đọc thêm ở đây:
 
-- [How important are constraints like NOT NULL and FOREIGN KEY if I’ll always control my database input with php?](https://stackoverflow.com/questions/382309/how-important-are-constraints-like-not-null-and-foreign-key-if-ill-always-contr)
-- [Are foreign keys really necessary in a database design?](https://stackoverflow.com/questions/18717/are-foreign-keys-really-necessary-in-a-database-design)
+- [Các ràng buộc quan trngj như thế nào như NOT NULL và FOREIGN KEY nếu tôi luôn luôn kiểm soát đầu vào của cơ sở dữ liệu trong php?](https://stackoverflow.com/questions/382309/how-important-are-constraints-like-not-null-and-foreign-key-if-ill-always-contr)
+- [khóa ngoại thực sự cần thiết trong thiết kế csdl?](https://stackoverflow.com/questions/18717/are-foreign-keys-really-necessary-in-a-database-design)
 - [Are foreign keys really necessary in a database design?](http://www.diovo.com/2008/08/are-foreign-keys-really-necessary-in-a-database-design/)
 
-**3. Using natural rather than surrogate (technical) primary keys**
+**3. Sử dụng khóa chính 1 cách tự nhiên thay vì chỉ để đại diện ( về mặt kỹ thuật)**
 
-Natural keys are keys based on externally meaningful data that is (ostensibly) unique. Common examples are product codes, two-letter state codes (US), social security numbers and so on. Surrogate or technical primary keys are those that have absolutely no meaning outside the system. They are invented purely for identifying the entity and are typically auto-incrementing fields (SQL Server, MySQL, others) or sequences (most notably Oracle).
+Những khóa tự nhiên là những khóa dựa trên ý nghĩa bên ngoài của dữ liệu đó là (bề ngoài) độc nhất.Các ví dụ phổ biến là mã sản phẩm,2 chữa của mã tiểu bang (US), số bảo mật xã hội và vân vân. Các khóa chính thay thế hoặc kỹ thuật chính là những khoá hoàn toàn không có ý nghĩa bên ngoài hệ thống. Chúng được phát minh hoàn toàn để xác định thực thể và thường là các trường gia tăng tự động (SQL Server, MySQL, others) hoặc các chuỗi (đáng chú ý nhất là Oracle).
 
-In my opinion you should **always** use surrogate keys. This issue has come up in these questions:
+Theo tôi bạn nên **luôn luôn** sử dụng khóa đại diện. Vấn đề này đưa ra trong những câu hỏi dưới đây:
 
-- [How do you like your primary keys?](https://stackoverflow.com/questions/404040/how-do-you-like-your-primary-keys)
-- [What's the best practice for primary keys in tables?](https://stackoverflow.com/questions/337503/whats-the-best-practice-for-primary-keys-in-tables)
-- [Which format of primary key would you use in this situation.](https://stackoverflow.com/questions/506164/which-format-of-primary-key-would-you-use-in-this-situation)
-- [Surrogate vs. natural/business keys](https://stackoverflow.com/questions/63090/surrogate-vs-natural-business-keys)
-- [Should I have a dedicated primary key field?](https://stackoverflow.com/questions/166750/should-i-have-a-dedicated-primary-key-field)
+- [Bạn thích khóa chính của mình như thế nào?](https://stackoverflow.com/questions/404040/how-do-you-like-your-primary-keys)
+- [cách thực hành tốt nhất các khóa chính trong bảng?](https://stackoverflow.com/questions/337503/whats-the-best-practice-for-primary-keys-in-tables)
+- [Bạn sử dụng định dạng khóa chính nào trong trường hợp này.](https://stackoverflow.com/questions/506164/which-format-of-primary-key-would-you-use-in-this-situation)
+- [Khóa đại diện với khóa tự nhiên / business](https://stackoverflow.com/questions/63090/surrogate-vs-natural-business-keys)
+- [Bạn có nên có trường khóa chính riêng?](https://stackoverflow.com/questions/166750/should-i-have-a-dedicated-primary-key-field)
 
-This is a somewhat controversial topic on which you won't get universal agreement. While you may find some people, who think natural keys are in some situations OK, you won't find any criticism of surrogate keys other than being arguably unnecessary. That's quite a small downside if you ask me.
+Đây là một chủ đề gây nhiều tranh cãi mà bạn sẽ không đạt được thỏa thuận chung. Trong khi bạn có thể tìm thấy một số người, những người nghĩ rằng các khóa tự nhiên là trong một số tình huống OK, bạn sẽ không tìm thấy bất kỳ lời chỉ trích của các khóa đại diện khác hơn là cho là không cần thiết. Đó là một nhược điểm nhỏ nếu bạn hỏi tôi.
 
-Remember, even [countries can cease to exist](http://en.wikipedia.org/wiki/ISO_3166-1) (for example, Yugoslavia).
+Hãy nhớ rằng, [Các quốc gia có thể không tồn tại](http://en.wikipedia.org/wiki/ISO_3166-1) (ví dụ, Yugoslavia).
 
-**4. Writing queries that require 
+**4. Viết các truy vấn yêu cầu
 
-DISTINCT to work**
+DISTINCT làm việc**
 
-You often see this in ORM-generated queries. Look at the log output from Hibernate and you'll see all the queries begin with:
+Bạn thường thấy điều này trong truy vấn tạo-ORM. Để ý đầu ra log từ Hibernate và bạn sẽ nhìn thấy toàn bộ truy vấn bắt đầu với:
 
 SELECT DISTINCT ...
 
-This is a bit of a shortcut to ensuring you don't return duplicate rows and thus get duplicate objects. You'll sometimes see people doing this as well. If you see it too much it's a real red flag. Not that 
+Đây là một chút của một phím tắt để đảm bảo bạn không trả lại các hàng trùng lặp và do đó nhận được các đối tượng trùng lặp. Đôi khi bạn cũng thấy những người làm việc này. Nếu bạn nhìn thấy nó quá nhiều đó là một lá cờ đỏ thực sự (xuất hiện khi gặp lỗi). Không phải cái đó
 
-DISTINCT is bad or doesn't have valid applications. It does (on both counts) but it's not a surrogate or a stopgap for writing correct queries.
+DISTINCT là xấu hoặc là không có ứng dụng hợp lệ. Nó có (về cả 2 mặt) Nhưng nó không phải là 1 đại diện hoặc là 1 rào cản cho việc viết truy vấn hợp lệ.
 
-From [Why I Hate DISTINCT](http://weblogs.sqlteam.com/markc/archive/2008/11/11/60752.aspx):
+Từ [Tại sao tôi ghét DISTINCT](http://weblogs.sqlteam.com/markc/archive/2008/11/11/60752.aspx):
 
-> Where things start to go sour in my opinion is when a developer is building substantial query, joining tables together, and all of a sudden he realizes that it **looks** like he is getting duplicate (or even more) rows and his immediate response...his "solution" to this "problem" is to throw on the DISTINCT keyword and **POOF** all his troubles go away.
+> Trong trường hợp mọi thứ bắt đầu trở nên rắc rối theo ý kiến ​​của tôi là khi một nhà phát triển đang xây dựng truy vấn đáng kể, Nối các bảng với nhau, và đột nhiên anh ta nhận ra rằng có vẻ như anh ta đang nhận được bản sao (hoặc thậm chí nhiều hơn) hàng và phản ứng ngay lập tức "giải pháp" của anh ta đối với "vấn đề" này là ném vào từ khóa DISTINCT và **POOF** tất cả các rắc rối của ông biến mất..
 
-**5. Favouring aggregation over joins**
+**5. Khuyến khích tập hợp các kết nối**
 
-Another common mistake by database application developers is to not realize how much more expensive aggregation (ie the 
+Một sai lầm phổ biến khác của các nhà phát triển ứng dụng csdl là không nhận ra các tập hợp giá trị hơn (ví dụ như mệnh đề GROUP BY) có thể được so sánh với joins.
 
-GROUP BY clause) can be compared to joins.
+Để cung cấp cho ban một ý tưởng về sự phổ biến rộng rãi này là, Tôi đã viết chủ đề này rất nhiều lần ở đây và bị khá nhiều downvote , Ví dụ:
 
-To give you an idea of how widespread this is, I've written on this topic several times here and been downvoted a lot for it. For example:
+Từ [Câu lệnh SQL - “join” vs “group by và having”](https://stackoverflow.com/questions/477006/sql-statement-join-vs-group-by-and-having/477013#477013):
 
-From [SQL statement - “join” vs “group by and having”](https://stackoverflow.com/questions/477006/sql-statement-join-vs-group-by-and-having/477013#477013):
-
-> First query:
+> Truy vấn đầu tiên:
 
 SELECT userid
 FROM userrole
@@ -72,7 +70,7 @@ HAVING COUNT(1) = 3
 
 > Query time: 0.312 s
 
-> Second query:
+> Truy vấn thứ 2:
 
 SELECT t1.userid
 FROM userrole t1
@@ -82,25 +80,25 @@ AND t1.roleid = 1
 
 > Query time: 0.016 s
 
-> That's right. The join version I proposed is **twenty times faster than the aggregate version.**
+> Nó là đúng. Phiên bản join do tôi đề xuất **nhanh hơn gấp 20 lần phiên bản tổng hợp.**
 
-**6. Not simplifying complex queries through views**
+**6. Không đơn giản hóa các truy vấn phức tạp thông qua các chế độ views**
 
-Not all database vendors support views but for those that do, they can greatly simplify queries if used judiciously. For example, on one project I used a [generic Party model](http://www.tdan.com/view-articles/5014/) for CRM. This is an extremely powerful and flexible modelling technique but can lead to many joins. In this model there were:
+Không phải tất cả các nhà cung cấp cơ sở dữ liệu hỗ trợ quan điểm nhưng đối với những người làm, họ có thể đơn giản hóa các truy vấn nếu được sử dụng một cách thận trọng. Ví dụ, trong một dự án tôi đã sử dụng một [mô hình chung của Party](http://www.tdan.com/view-articles/5014/) đối với CRM. Đây là một kỹ thuật mô hình rất mạnh và linh hoạt nhưng có thể dẫn đến nhiều người tham gia. Trong mô hình này có:
 
-- **Party**: people and organisations;
-- **Party Role**: things those parties did, for example Employee and Employer;
-- **Party Role Relationship**: how those roles related to each other.
+- **Party**: mọi người và tổ chức;
+- **Party Role**: những điều mà các bên đã làm, ví dụ Nhân viên và Nhà tuyển dụng;
+- **Party Role Relationship**: làm thế nào để những vai trò liên qua đến nhau.
 
-Example:
+Ví dụ:
 
-- Ted is a Person, being a subtype of Party;
-- Ted has many roles, one of which is Employee;
-- Intel is an organisation, being a subtype of a Party;
-- Intel has many roles, one of which is Employer;
-- Intel employs Ted, meaning there is a relationship between their respective roles.
+- Ted là 1 con người, là 1 phần tử của bữa tiệc;
+- Ted có nhiều vai trò, một trong số đó là nhân viên;
+- Intel là một tổ chức, là 1 phần tử của bữa tiệc;
+- Intel có nhiều vai trò, một trong số đó là nhà tuyển dụng;
+- Intel thuê Ted, có nghĩa là có một mối quan hệ tương ứng giữa họ;
 
-So there are five tables joined to link Ted to his employer. You assume all employees are Persons (not organisations) and provide this helper view:
+Vì vậy, có năm bảng tham gia để liên kết Ted với chủ của mình. Bạn giả định tất cả nhân viên là Người (không phải tổ chức) và cung cấp khung nhìn trợ giúp này:
 
 CREATE VIEW vw_employee AS
 SELECT p.title, p.given_names, p.surname, p.date_of_birth, p2.party_name employer_name
@@ -111,19 +109,19 @@ JOIN party_role_relationship prr ON child.id = prr.child_id AND prr.type = 'EMPL
 JOIN party_role parent ON parent.id = prr.parent_id = parent.id
 JOIN party p2 ON parent.party_id = p2.id
 
-And suddenly you have a very simple view of the data you want but on a highly flexible data model.
+và đột nhiên bạn có một cái nhìn đơn giản về dữ liệu mà bạn muốn trên một mô hình có tính linh hoạt cao.
 
-**7. Not sanitizing input**
+**7. Không chắt lọc đầu vào**
 
-This is a huge one. Now I like PHP but if you don't know what you're doing it's really easy to create sites vulnerable to attack. Nothing sums it up better than the [story of little Bobby Tables](http://xkcd.com/327/).
+Đây là một lỗi lớn.  Bây giờ tôi thích PHP nhưng nếu bạn không biết bạn đang làm gì thì thật dễ dàng để tạo các trang web dễ bị tấn công. Không có gì tổng kết nó tốt hơn so với [cầu truyện về cái bàn Bobby bé nhỏ](http://xkcd.com/327/).
 
-Data provided by the user by way of URLs, form data **and cookies** should always be treated as hostile and sanitized. Make sure you're getting what you expect.
+Dữ liệu được cung cấp bởi người dùng thông qua URLs, form dữ liệu **và cookies** nên luôn luôn được coi là thù địch và khử trùng. Đảm bảo bạn đang nhận được những gì bạn mong đợi.
 
-**8. Not using prepared statements**
+**8. Không sử dụng câu lệnh đã được chuẩn bị sẵn**
 
-Prepared statements are when you compile a query minus the data used in inserts, updates and 
+Các câu lệnh đã được chuẩn bị là khi bạn biên dịch truy vấn trừ dữ liệu được sử dụng trong inserts , updates và
 
-WHERE clauses and then supply that later. For example:
+mệnh đề WHERE và sau đó cung cấp chúng muộn. Ví dụ như:
 
 SELECT * FROM users WHERE username = 'bob'
 
@@ -131,17 +129,17 @@ vs
 
 SELECT * FROM users WHERE username = ?
 
-or
+hoặc
 
 SELECT * FROM users WHERE username = :username
 
-depending on your platform.
+tùy thuộc vào nền tảng của bạn.
 
-I've seen databases brought to their knees by doing this. Basically, each time any modern database encounters a new query it has to compile it. If it encounters a query it's seen before, you're giving the database the opportunity to cache the compiled query and the execution plan. By doing the query a lot you're giving the database the opportunity to figure that out and optimize accordingly (for example, by pinning the compiled query in memory).
+Tôi đã nhìn thấy cơ sở dữ liệu bị sụp xuống bằng cách làm điều này. Về cơ bản, mỗi khi cơ sở dữ liệu hiện đại gặp một truy vấn mới, nó phải biên dịch nó. Nếu nó gặp một truy vấn nó được nhìn thấy trước, bạn đang cho cơ sở dữ liệu cơ hội để cache truy vấn biên dịch và kế hoạch thực hiện. Bằng cách thực hiện các truy vấn rất nhiều bạn đang cho cơ sở dữ liệu cơ hội để con số đó ra và tối ưu hóa cho phù hợp (ví dụ, bằng cách ghim các truy vấn biên dịch trong bộ nhớ).
 
-Using prepared statements will also give you meaningful statistics about how often certain queries are used.
+Sử dụng các câu lệnh chuẩn bị cũng sẽ cung cấp cho bạn số liệu thống kê có ý nghĩa về tần suất các truy vấn nhất định được sử dụng.
 
-Prepared statements will also better protect you against SQL injection attacks.
+Các câu lệnh được chuẩn bị cũng sẽ giúp bạn chống lại các cuộc tấn công SQL injection tốt hơn.
 
 **9. Not normalizing enough**
 
