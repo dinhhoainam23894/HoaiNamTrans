@@ -1,10 +1,10 @@
-## Những sai lầm về phát triển dữ liệu mà các nhà phát triển phần mềm thường mắc phải?
+## Những sai lầm về phát triển dữ liệu phổ biến mà các nhà phát triển phần mềm thường mắc phải?
 
-_source https://stackoverflow.com/questions/621884/database-development-mistakes-made-by-application-developers_
+_nguồn https://stackoverflow.com/questions/621884/database-development-mistakes-made-by-application-developers_
 
 **1. Không sử dụng các chỉ số thích hợp**
 
-Đây là một điều tưởng chừng như đơn giản nhưng nó lại gặp phải mọi lúc. Khóa ngoại nên có chỉ số trên chúng.Nếu bạn đang sử dụng 1 trường trong mệnh đề 
+Đây là một điều tưởng chừng như đơn giản nhưng nó vẫn xảy ra thường xuyên. Khóa ngoại nên có chỉ số trên chúng.Nếu bạn đang sử dụng 1 trường trong mệnh đề 
 
 WHERE bạn nên (có thể) có một chỉ số cho nó. các chỉ mục này thường dựa trên nhiều trường bạn cần để thực hiện truy vấn.
 
@@ -12,17 +12,17 @@ WHERE bạn nên (có thể) có một chỉ số cho nó. các chỉ mục này
 
 Cơ sở dữ liệu của bạn có thể thay đổi ngay ở đây nhưng nếu cơ sở dữ liệu của bạn hỗ trợ toàn vẹn tham chiếu--có nghĩa là tất cả khóa ngoại đều đảm bảo trỏ tới thực thể có tồn tại--bạn nên sử dụng nó.
 
-Nó là lỗi khá phổ biến ở cớ sở dữ liệu MySQL. Tôi không tin rằng MyISAM hỗ trợ nó. InnoDB thì có. Bạn sẽ tìm thấy những người sử dụng MyISAM hoặc đang sử dụng InnoDB nhưng sẽ không sử dụng nó (nó ở đây là toàn vẹn tham chiếu) theo bất cứ cách nào.
+Nó là lỗi khá phổ biến ở cớ sở dữ liệu MySQL. Tôi không tin rằng MyISAM hỗ trợ nó. InnoDB thì có. Bạn sẽ tìm thấy những người sử dụng MyISAM hoặc đang sử dụng InnoDB nhưng sẽ không còn sử dụng nó (nó ở đây là toàn vẹn tham chiếu) theo bất cứ cách nào.
 
 Đọc thêm ở đây:
 
-- [Các ràng buộc quan trngj như thế nào như NOT NULL và FOREIGN KEY nếu tôi luôn luôn kiểm soát đầu vào của cơ sở dữ liệu trong php?](https://stackoverflow.com/questions/382309/how-important-are-constraints-like-not-null-and-foreign-key-if-ill-always-contr)
+- [Các ràng buộc như NOT NULL và FOREIGN KEY quan trọng như thế nào nếu thường xuyên phải kiểm soát đầu vào của cơ sở dữ liệu với php?](https://stackoverflow.com/questions/382309/how-important-are-constraints-like-not-null-and-foreign-key-if-ill-always-contr)
 - [khóa ngoại thực sự cần thiết trong thiết kế csdl?](https://stackoverflow.com/questions/18717/are-foreign-keys-really-necessary-in-a-database-design)
-- [Are foreign keys really necessary in a database design?](http://www.diovo.com/2008/08/are-foreign-keys-really-necessary-in-a-database-design/)
+- [Các khoá ngoại có cần thiết trong thiết kế cơ sở dữ liệu?](http://www.diovo.com/2008/08/are-foreign-keys-really-necessary-in-a-database-design/)
 
 **3. Sử dụng khóa chính 1 cách tự nhiên thay vì chỉ để đại diện ( về mặt kỹ thuật)**
 
-Những khóa tự nhiên là những khóa dựa trên ý nghĩa bên ngoài của dữ liệu đó là (bề ngoài) độc nhất.Các ví dụ phổ biến là mã sản phẩm,2 chữa của mã tiểu bang (US), số bảo mật xã hội và vân vân. Các khóa chính thay thế hoặc kỹ thuật chính là những khoá hoàn toàn không có ý nghĩa bên ngoài hệ thống. Chúng được phát minh hoàn toàn để xác định thực thể và thường là các trường gia tăng tự động (SQL Server, MySQL, others) hoặc các chuỗi (đáng chú ý nhất là Oracle).
+Những khóa tự nhiên là những khóa dựa trên ý nghĩa bên ngoài của dữ liệu đó là (bề ngoài) duy nhất.Các ví dụ phổ biến là mã sản phẩm,2 chữa của mã tiểu bang (US), số bảo mật xã hội và vân vân. Các khóa chính thay thế hoặc kỹ thuật chính là những khoá hoàn toàn không có ý nghĩa bên ngoài hệ thống. Chúng được phát minh hoàn toàn để xác định thực thể và thường là các trường tự tăng (Auto-increament) (SQL Server, MySQL, others) hoặc tuần tự (đáng chú ý nhất là Oracle).
 
 Theo tôi bạn nên **luôn luôn** sử dụng khóa đại diện. Vấn đề này đưa ra trong những câu hỏi dưới đây:
 
@@ -38,19 +38,19 @@ Hãy nhớ rằng, [Các quốc gia có thể không tồn tại](http://en.wiki
 
 **4. Viết các truy vấn yêu cầu
 
-DISTINCT làm việc**
+Để DISTINCT làm việc**
 
 Bạn thường thấy điều này trong truy vấn tạo-ORM. Để ý đầu ra log từ Hibernate và bạn sẽ nhìn thấy toàn bộ truy vấn bắt đầu với:
 
 SELECT DISTINCT ...
 
-Đây là một chút của một phím tắt để đảm bảo bạn không trả lại các hàng trùng lặp và do đó nhận được các đối tượng trùng lặp. Đôi khi bạn cũng thấy những người làm việc này. Nếu bạn nhìn thấy nó quá nhiều đó là một lá cờ đỏ thực sự (xuất hiện khi gặp lỗi). Không phải cái đó
+Đây là một chút của một phím tắt để đảm bảo bạn không trả lại các hàng trùng lặp và do đó nhận được các đối tượng trùng lặp. Đôi khi bạn cũng thấy những người làm việc này. Nếu bạn nhìn thấy nó quá nhiều đó lại là sự báo động (xuất hiện khi gặp lỗi). Không phải do
 
 DISTINCT là xấu hoặc là không có ứng dụng hợp lệ. Nó có (về cả 2 mặt) Nhưng nó không phải là 1 đại diện hoặc là 1 rào cản cho việc viết truy vấn hợp lệ.
 
 Từ [Tại sao tôi ghét DISTINCT](http://weblogs.sqlteam.com/markc/archive/2008/11/11/60752.aspx):
 
-> Trong trường hợp mọi thứ bắt đầu trở nên rắc rối theo ý kiến ​​của tôi là khi một nhà phát triển đang xây dựng truy vấn đáng kể, Nối các bảng với nhau, và đột nhiên anh ta nhận ra rằng có vẻ như anh ta đang nhận được bản sao (hoặc thậm chí nhiều hơn) hàng và phản ứng ngay lập tức "giải pháp" của anh ta đối với "vấn đề" này là ném vào từ khóa DISTINCT và **POOF** tất cả các rắc rối của ông biến mất..
+> Trong trường hợp mọi thứ bắt đầu trở nên rắc rối theo ý kiến của tôi là khi một nhà phát triển đang xây dựng một lượng đáng kể các truy vấn, Nối các bảng với nhau, và đột nhiên anh ta nhận ra rằng có vẻ như anh ta đang nhận được bản sao (hoặc thậm chí nhiều hơn)các hàng và phản ứng ngay lập tức của anh ấy... "giải pháp" của anh ta đối với "vấn đề" này là ném vào từ khóa DISTINCT và **POOF** tất cả các rắc rối của ông biến mất..
 
 **5. Khuyến khích tập hợp các kết nối**
 
@@ -80,11 +80,11 @@ AND t1.roleid = 1
 
 > Query time: 0.016 s
 
-> Nó là đúng. Phiên bản join do tôi đề xuất **nhanh hơn gấp 20 lần phiên bản tổng hợp.**
+> Đúng rồi. Join **nhanh hơn gấp 20 lần gom nhóm.**
 
-**6. Không đơn giản hóa các truy vấn phức tạp thông qua các chế độ views**
+**6. Không đơn giản hóa các truy vấn phức tạp thông qua các views**
 
-Không phải tất cả các nhà cung cấp cơ sở dữ liệu hỗ trợ quan điểm nhưng đối với những người làm, họ có thể đơn giản hóa các truy vấn nếu được sử dụng một cách thận trọng. Ví dụ, trong một dự án tôi đã sử dụng một [mô hình chung của Party](http://www.tdan.com/view-articles/5014/) đối với CRM. Đây là một kỹ thuật mô hình rất mạnh và linh hoạt nhưng có thể dẫn đến nhiều người tham gia. Trong mô hình này có:
+Không phải tất cả các nhà cung cấp cơ sở dữ liệu hỗ trợ view nhưng đối với những cái có hỗ trợ, họ có thể đơn giản hóa các truy vấn nếu được sử dụng một cách thận trọng. Ví dụ, trong một dự án tôi đã sử dụng một [mô hình chung của Party](http://www.tdan.com/view-articles/5014/) đối với CRM. Đây là một kỹ thuật mô hình rất mạnh và linh hoạt nhưng có thể dẫn đến nhiều người tham gia. Trong mô hình này có:
 
 - **Party**: mọi người và tổ chức;
 - **Party Role**: những điều mà các bên đã làm, ví dụ Nhân viên và Nhà tuyển dụng;
@@ -98,7 +98,7 @@ Ví dụ:
 - Intel có nhiều vai trò, một trong số đó là nhà tuyển dụng;
 - Intel thuê Ted, có nghĩa là có một mối quan hệ tương ứng giữa họ;
 
-Vì vậy, có năm bảng tham gia để liên kết Ted với chủ của mình. Bạn giả định tất cả nhân viên là Người (không phải tổ chức) và cung cấp khung nhìn trợ giúp này:
+Vì vậy, có năm bảng join để liên kết Ted với chủ của mình. Bạn giả định tất cả nhân viên là Người (không phải tổ chức) và cung cấp các view hỗ trợ:
 
 CREATE VIEW vw_employee AS
 SELECT p.title, p.given_names, p.surname, p.date_of_birth, p2.party_name employer_name
@@ -115,7 +115,7 @@ và đột nhiên bạn có một cái nhìn đơn giản về dữ liệu mà b
 
 Đây là một lỗi lớn.  Bây giờ tôi thích PHP nhưng nếu bạn không biết bạn đang làm gì thì thật dễ dàng để tạo các trang web dễ bị tấn công. Không có gì tổng kết nó tốt hơn so với [cầu truyện về cái bàn Bobby bé nhỏ](http://xkcd.com/327/).
 
-Dữ liệu được cung cấp bởi người dùng thông qua URLs, form dữ liệu **và cookies** nên luôn luôn được coi là thù địch và khử trùng. Đảm bảo bạn đang nhận được những gì bạn mong đợi.
+Dữ liệu được cung cấp bởi người dùng thông qua URLs, form dữ liệu **và cookies** nên luôn được coi là nguy hiểm và nên được cải thiện. Đảm bảo bạn đang nhận được những gì bạn mong muốn.
 
 **8. Không sử dụng câu lệnh đã được chuẩn bị sẵn**
 
@@ -135,7 +135,7 @@ SELECT * FROM users WHERE username = :username
 
 tùy thuộc vào nền tảng của bạn.
 
-Tôi đã nhìn thấy cơ sở dữ liệu bị sụp xuống bằng cách làm điều này. Về cơ bản, mỗi khi cơ sở dữ liệu hiện đại gặp một truy vấn mới, nó phải biên dịch nó. Nếu nó gặp một truy vấn nó được nhìn thấy trước, bạn đang cho cơ sở dữ liệu cơ hội để cache truy vấn biên dịch và kế hoạch thực hiện. Bằng cách thực hiện các truy vấn rất nhiều bạn đang cho cơ sở dữ liệu cơ hội để con số đó ra và tối ưu hóa cho phù hợp (ví dụ, bằng cách ghim các truy vấn biên dịch trong bộ nhớ).
+Tôi đã nhìn thấy cơ sở dữ liệu bị phá huỷ bằng cách làm điều này. Về cơ bản, mỗi khi cơ sở dữ liệu hiện đại gặp một truy vấn mới, nó phải biên dịch nó. Nếu nó gặp một truy vấn đã từng trước đó, bạn đang cho cơ sở dữ liệu cơ hội để truy vấn cache biên dịch và thực thi. Bằng cách thực hiện các truy vấn rất nhiều bạn đang cho cơ sở dữ liệu cơ hội để con số đó ra và tối ưu hóa cho phù hợp (ví dụ, bằng cách ghim các truy vấn biên dịch trong bộ nhớ).
 
 Sử dụng các câu lệnh chuẩn bị cũng sẽ cung cấp cho bạn số liệu thống kê có ý nghĩa về tần suất các truy vấn nhất định được sử dụng.
 
